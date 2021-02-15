@@ -31,7 +31,13 @@
 
 
             <nav class="navbar">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <div class="navbar__icon-container">
+                        <button>
+                                <i class="fa fa-bars navbar-icon" aria-hidden="true"></i>
+                        </button>
+                        
+                        <i class="fa fa-search fa-rotate-90 navbar-icon" aria-hidden="true"></i>
+                    </div>
                     <ul class="navbar_items">
                         <li class="navbar__item">microsoft 265</li>
                         <li class="navbar__item">Office</li>
@@ -93,53 +99,60 @@
                         <span>All microsoft</span>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </div> -->
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <img src="images/microsoft-logo.png" alt="microsoft logo">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    
+                    <img class="navbar__microsoft-logo" src="images/microsoft-logo.png" alt="microsoft logo">
+                    <div class="navbar__icon-container">
+                        <i class="fa fa-shopping-cart navbar-icon" aria-hidden="true"></i>
+                        <i class="fa fa-user-circle-o navbar-icon" aria-hidden="true"></i>
+                    </div>
             </nav>
+            <!--end of .navbar-->
         
 
+
             <section class="carousel">
-                <button class="carousel__slide-btn slide-btn-left">
+                <!-- <button class="carousel__slide-btn slide-btn-left">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
-                </button>
+                </button> -->
                 <div class="carousel__inner">
                     <ul class="carousel__slides">
                         <li class="carousel__slide">
-                            <button>
-                                <a href="#" target="_blank">
-                                    <img src="./images/RE4MwZq.jpg" alt="">
-                                    <div class="carousel__slide__product-info">
-                                        <h2>Bundle and save up to $460</h2>
-                                        <p>
-                                        Complete your Surface Pro 7 with choice
-                                        of select Type Cover.
-                                        For help choosing the right Surface,
-                                        book a personal shopping appointment
-                                        with a Microsoft Store associate.
-                                        </p>
-                                        <div class="product-info__button-container">
-                                            <button class="btn-style-1">
-                                                <a href="#">
-                                                    <span>Shop now</span>
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                </a>
-                                            </button>
-
-                                            <button class="btn-style-2">
-                                                <a href="#">
-                                                    <span>Book an appointment</span>
-                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                                </a>
-                                            </button>
-                                        </div>
-                                    </div>
+                            <button class="carousel__slide__btn">
+                                <a class="carousel__slide__link" href="#" target="_blank">
+                                    <img class="carousel__slide__img" src="./images/RE4ntGe.jpg" alt=""/>
                                 </a>
                             </button>
+                                    
+                            <div class="carousel__slide__product-info">
+                                <h2>Bundle and save up to $460</h2>
+                                <p>
+                                Complete your Surface Pro 7 with choice
+                                of select Type Cover.
+                                For help choosing the right Surface,
+                                book a personal shopping appointment
+                                with a Microsoft Store associate.
+                                </p>
+                                <div class="product-info__button-container">
+                                <button class="btn-style-1">
+                                    <a href="#">
+                                        <span>Shop now</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </button>
+
+                                <button class="btn-style-2">
+                                    <a href="#">
+                                        <span>Book an appointment</span>
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </button>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- <li class="carousel__slide">
                             <button>
                                 <a href="#" target="_blank">
-                                    <img src="./images/RE4DRie.png" alt="">
+                                    <img class="carousel__slide__img" src="./images/RE4DRie.png" alt="">
                                     <div class="carousel__slide__product-info">
                                         <h2>Microsoft 365</h2>
                                         <p>
@@ -165,28 +178,28 @@
                                     </div>
                                 </a>
                             </button>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
-                <button class="carousel__slide-btn slide-btn-left">
+                <!-- <button class="carousel__slide-btn slide-btn-left">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
-                </button>
+                </button> -->
 
-                <div class="slide-controls">
+                <!-- <div class="slide-controls">
                     <div class="slide-dots">
                         <button class="slide-dot"></button>
                         <button class="slide-dot"></button>
                     </div>
                     <button class="play-pause-btn">
                         <i class="fa fa-pause" aria-hidden="true"></i>
-                        <!-- <i class="fa fa-play" aria-hidden="true"></i> -->
                     </button>
-                </div>
+                </div> -->
             </section>
             <!--end of .carousel-->
 
 
-            <section class="product-section-1">
+
+            <!-- <section class="product-section-1">
                 <button class="carousel__slide-btn slide-btn-left">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </button>
@@ -291,12 +304,12 @@
                         </div>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <!--end of product-section-2 (1)-->
 
 
             
-            <section class="games-pass-section">
+            <!-- <section class="games-pass-section">
                 <img src="./images/RE4H4vB.png" alt="">
                 <div>
                     <h2>Xbox Games Pass Ultimate</h2>
@@ -323,13 +336,13 @@
                     </div>
 
                 </div>
-            </section>
+            </section> -->
             <!--end of games-pass-section-->
 
 
 
 
-            <section class="product-section-2 product-section-2-2">
+            <!-- <section class="product-section-2 product-section-2-2">
                 <h2>For Business</h2>
                 <ul class="product-items-2">
                     <li class="product-item-2">
@@ -389,13 +402,13 @@
                         </div>
                     </li>
                 </ul>
-            </section>
+            </section> -->
             <!--end of product-section-2 (2)-->
 
 
 
 
-            <section class="covid-response-banner">
+            <!-- <section class="covid-response-banner">
                 <h2>Microsoft's response to COVID-19</h2>
                 <p>Read how we’re responding to the COVID-19 outbreak, 
                 and get resources to help.</p>
@@ -406,14 +419,14 @@
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </a>
                 </button>
-            </section>
+            </section> -->
             <!--end of covid-response-banner-->
 
 
 
 
 
-            <section class="carousel">
+            <!-- <section class="carousel">
                 <button class="carousel__slide-btn slide-btn-left">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </button>
@@ -476,30 +489,29 @@
                     </div>
                     <button class="play-pause-btn">
                         <i class="fa fa-pause" aria-hidden="true"></i>
-                        <!-- <i class="fa fa-play" aria-hidden="true"></i> -->
                     </button>
                 </div>
-            </section>
+            </section> -->
             <!--end of .carousel-->
 
 
 
 
 
-            <section class="social-media-section">
+            <!-- <section class="social-media-section">
                 <ul class="social-media-section__items">
                     <li class="social-media-section__item">Follow Microsoft</li>
                     <li class="social-media-section__item"><img src="./images/icons/facebook.svg" alt=""></li>
                     <li class="social-media-section__item"><img src="./images/icons/twitter.svg" alt=""></li>
                     <li class="social-media-section__item"><img src="./images/icons/linkedin.svg" alt=""></li>
                 </ul>
-            </section>
+            </section> -->
             <!--end of .social-media-section-->
 
 
 
 
-            <footer class="footer">
+            <!-- <footer class="footer">
                 <ul class="footer__items footer__items-1">
                     <li class="footer__item footer__item-1">
                         <h4  class="footer__item__heading">What's new</h4>
@@ -603,7 +615,7 @@
                         <li class="footer__item footer__item-2">&copy; Microsoft 2021</li>
                     </ul>
                 </div>
-            </footer>
+            </footer> -->
             <!--end of .footer-->
             
             
